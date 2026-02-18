@@ -43,6 +43,22 @@
             color: #424245;
             margin-bottom: 14px;
         }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 14px;
+        }
+        li {
+            font-size: 15px;
+            color: #424245;
+            margin-bottom: 8px;
+        }
+        .highlight {
+            background: #f0f7ff;
+            border-left: 3px solid #007aff;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
         a { color: #007aff; text-decoration: none; }
         a:hover { text-decoration: underline; }
         .footer {
@@ -58,35 +74,110 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: February 5, 2026</p>
+        <p class="updated">Last updated: February 19, 2026</p>
 
         <p>TenseUp ("we", "our", or "the App") is an AI-powered English grammar practice application. Your privacy is important to us. This Privacy Policy explains what information we collect, how we use it, and your choices.</p>
 
         <h2>1. Information We Collect</h2>
-        <p><strong>Voice & Text Data:</strong> When you use the speech-to-text feature, your spoken words are transcribed on your device using Apple's Speech framework. The transcribed text is sent to OpenAI's API for grammar analysis. We do not store your voice recordings or transcriptions on our servers.</p>
-        <p><strong>Subscription Information:</strong> If you subscribe to TenseUp Pro, payment is processed entirely by Apple through the App Store. We do not collect or store your payment details. We receive only a confirmation of your subscription status through RevenueCat, our subscription management service.</p>
-        <p><strong>Usage Data:</strong> We track basic usage counts (e.g., daily practice sessions) locally on your device using UserDefaults. This data is not transmitted to any server.</p>
+        
+        <p><strong>Voice & Text Data:</strong> When you use the speech-to-text feature, your spoken words are transcribed on your device using Apple's Speech framework or Whisper AI (Premium+ only). The transcribed text is sent to OpenAI's API for grammar analysis and AI conversation features.</p>
+        
+        <p><strong>Subscription Information:</strong> If you subscribe to TenseUp Premium or Premium+, payment is processed entirely by Apple through the App Store. We do not collect or store your payment details. We receive only a confirmation of your subscription status through RevenueCat, our subscription management service.</p>
+        
+        <p><strong>Usage Data:</strong> We track basic usage counts (e.g., daily practice sessions, streak tracking) locally on your device using UserDefaults and SwiftData. This data is not transmitted to any external server.</p>
+        
+        <p><strong>Vocabulary Data:</strong> Words you save to your vocabulary list are stored locally on your device using SwiftData.</p>
 
-        <h2>2. Third-Party Services</h2>
-        <p>The App uses the following third-party services:</p>
-        <p><strong>OpenAI API:</strong> Your transcribed text is sent to OpenAI for grammar analysis. Please refer to <a href="https://openai.com/privacy" target="_blank">OpenAI's Privacy Policy</a> for information on how they handle data.</p>
-        <p><strong>RevenueCat:</strong> Used to manage subscriptions. RevenueCat receives an anonymous app user ID to verify subscription status. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's Privacy Policy</a>.</p>
-        <p><strong>Apple Speech Framework:</strong> Speech recognition is processed on-device or through Apple's servers, subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+        <div class="highlight">
+            <h2 style="margin-top: 0;">Third-Party AI Service - OpenAI</h2>
+            
+            <p><strong>What data is sent to OpenAI:</strong></p>
+            <ul>
+                <li>Your spoken or typed messages during AI conversations</li>
+                <li>Your grammar practice exercises and answers</li>
+                <li>Role-play scenario conversations</li>
+                <li>Text you request to be analyzed or corrected</li>
+                <li>Conversation context to provide personalized responses</li>
+            </ul>
+            
+            <p><strong>What data is NOT sent to OpenAI:</strong></p>
+            <ul>
+                <li>Your email address or Apple ID</li>
+                <li>Your payment information</li>
+                <li>Your device identifiers</li>
+                <li>Your saved vocabulary list</li>
+                <li>Your streak or usage statistics</li>
+                <li>Any personal profile information</li>
+            </ul>
+            
+            <p><strong>Why we send data to OpenAI:</strong><br>
+            We use OpenAI's GPT models to provide AI-powered features including:</p>
+            <ul>
+                <li>Natural conversation practice with AI</li>
+                <li>Real-time grammar corrections and explanations</li>
+                <li>Role-play scenario interactions</li>
+                <li>Personalized learning feedback</li>
+            </ul>
+            
+            <p><strong>How OpenAI handles your data:</strong><br>
+            OpenAI processes your conversation data to generate AI responses. According to OpenAI's API Data Usage Policy, data submitted through their API:</p>
+            <ul>
+                <li>Is not used to train OpenAI's models</li>
+                <li>May be retained for up to 30 days for abuse monitoring</li>
+                <li>Is then deleted from OpenAI's systems</li>
+            </ul>
+            
+            <p><strong>Your consent:</strong><br>
+            By using TenseUp's AI features (conversations, grammar check, role-play, lessons), you explicitly consent to your conversation data being sent to OpenAI for processing. You can stop using AI features at any time by closing the app or deleting your account.</p>
+            
+            <p><strong>Learn more about OpenAI's practices:</strong></p>
+            <ul>
+                <li><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
+                <li><a href="https://openai.com/policies/api-data-usage-policies" target="_blank">OpenAI API Data Usage Policy</a></li>
+            </ul>
+        </div>
+
+        <h2>2. Other Third-Party Services</h2>
+        
+        <p><strong>RevenueCat:</strong> Used to manage subscriptions. RevenueCat receives an anonymous app user ID to verify subscription status. RevenueCat does not receive your conversation data. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's Privacy Policy</a>.</p>
+        
+        <p><strong>Apple Speech Framework:</strong> Speech recognition (Standard mode) is processed on-device or through Apple's servers, subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+        
+        <p><strong>Whisper AI (Premium+ only):</strong> Advanced speech recognition is processed through OpenAI's Whisper API. Audio recordings are sent to OpenAI, transcribed, and then deleted. Transcriptions are handled as described in the OpenAI section above.</p>
 
         <h2>3. Data Storage & Security</h2>
-        <p>Your practice history is stored locally on your device. We do not operate external servers that store your personal data. All communication with third-party APIs uses encrypted HTTPS connections.</p>
+        <p>Your practice history, vocabulary list, and usage statistics are stored locally on your device using SwiftData and UserDefaults. We do not operate external servers that store your personal data. All communication with third-party APIs (OpenAI, RevenueCat) uses encrypted HTTPS connections.</p>
 
-        <h2>4. Children's Privacy</h2>
-        <p>TenseUp is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
+        <h2>4. How to Control Your Data</h2>
+        <p><strong>Stop sharing data with OpenAI:</strong> Stop using the AI features (conversations, grammar check, role-play, lessons). The app will continue to work for vocabulary review and streak tracking.</p>
+        
+        <p><strong>Delete your local data:</strong> Delete the TenseUp app from your device. This will remove all locally stored practice history, vocabulary, and statistics.</p>
+        
+        <p><strong>Cancel subscription:</strong> Go to Settings → Apple ID → Subscriptions on your device.</p>
 
-        <h2>5. Your Rights</h2>
-        <p>Since your data is stored locally on your device, you can delete it at any time by deleting the App. To cancel your subscription, go to Settings → Apple ID → Subscriptions on your device.</p>
+        <h2>5. Children's Privacy</h2>
+        <p>TenseUp is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used our app, please contact us.</p>
 
-        <h2>6. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated date.</p>
+        <h2>6. Your Rights (GDPR/CCPA)</h2>
+        <p>If you are located in the European Union or California, you have certain rights regarding your data:</p>
+        <ul>
+            <li><strong>Access:</strong> Request a copy of your data (stored locally on your device)</li>
+            <li><strong>Deletion:</strong> Delete the app to remove all local data</li>
+            <li><strong>Opt-out:</strong> Stop using AI features to stop sharing with OpenAI</li>
+        </ul>
 
-        <h2>7. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, contact us at:<br>
+        <h2>7. Data Retention</h2>
+        <ul>
+            <li><strong>Local data:</strong> Stored on your device until you delete the app</li>
+            <li><strong>OpenAI data:</strong> Retained for up to 30 days, then deleted</li>
+            <li><strong>RevenueCat data:</strong> Subscription status retained as long as you're subscribed</li>
+        </ul>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or how your data is handled, contact us at:<br>
         <a href="mailto:jaccoperetz@gmail.com">jaccoperetz@gmail.com</a></p>
 
         <div class="footer">© 2026 TenseUp. All Rights Reserved.</div>

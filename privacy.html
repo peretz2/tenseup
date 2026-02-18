@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Use — TenseUp</title>
+    <title>Privacy Policy — TenseUp</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -52,27 +52,12 @@
             color: #424245;
             margin-bottom: 8px;
         }
-        .pricing-table {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 24px;
-            margin: 24px 0;
-        }
-        .pricing-tier {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e5e5ea;
-        }
-        .pricing-tier:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-        .tier-name {
-            font-weight: 600;
-            font-size: 16px;
-            color: #1d1d1f;
-            margin-bottom: 8px;
+        .highlight {
+            background: #f0f7ff;
+            border-left: 3px solid #007aff;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 8px;
         }
         a { color: #007aff; text-decoration: none; }
         a:hover { text-decoration: underline; }
@@ -88,150 +73,112 @@
 </head>
 <body>
     <div class="container">
-        <h1>Terms of Use</h1>
+        <h1>Privacy Policy</h1>
         <p class="updated">Last updated: February 19, 2026</p>
 
-        <p>Welcome to TenseUp. By downloading, accessing, or using the TenseUp application ("the App"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.</p>
+        <p>TenseUp ("we", "our", or "the App") is an AI-powered English grammar practice application. Your privacy is important to us. This Privacy Policy explains what information we collect, how we use it, and your choices.</p>
 
-        <h2>1. Description of Service</h2>
-        <p>TenseUp is an AI-powered English grammar practice and conversation application. The App allows users to:</p>
-        <ul>
-            <li>Practice spoken English with AI conversation partners</li>
-            <li>Receive real-time grammar corrections and explanations</li>
-            <li>Participate in role-play scenarios for real-life situations</li>
-            <li>Complete structured grammar lessons</li>
-            <li>Build and review vocabulary with spaced repetition</li>
-            <li>Track learning progress and maintain daily streaks</li>
-        </ul>
-        <p>The App is intended for educational purposes only and is not a substitute for professional language instruction.</p>
-
-        <h2>2. Third-Party AI Services</h2>
-        <p>TenseUp uses OpenAI's API to provide AI-powered features. By using the App's AI features (conversations, grammar check, role-play, lessons), you acknowledge and agree that:</p>
-        <ul>
-            <li>Your conversation text will be sent to OpenAI for processing</li>
-            <li>OpenAI's Privacy Policy and Terms of Service apply to this data</li>
-            <li>You have reviewed our Privacy Policy explaining this data sharing</li>
-            <li>You consent to this data being processed by OpenAI</li>
-        </ul>
-        <p>For more details, see our <a href="privacy.html">Privacy Policy</a> and <a href="https://openai.com/policies/terms-of-use" target="_blank">OpenAI's Terms of Service</a>.</p>
-
-        <h2>3. Subscriptions & Payments</h2>
+        <h2>1. Information We Collect</h2>
         
-        <div class="pricing-table">
-            <div class="pricing-tier">
-                <div class="tier-name">Free Tier</div>
-                <p>The App provides limited features at no cost:</p>
-                <ul>
-                    <li>5 AI conversations per day</li>
-                    <li>Basic grammar lessons</li>
-                    <li>50-word vocabulary limit</li>
-                    <li>Standard speech recognition</li>
-                </ul>
-            </div>
+        <p><strong>Voice & Text Data:</strong> When you use the speech-to-text feature, your spoken words are transcribed on your device using Apple's Speech framework or Whisper AI (Premium+ only). The transcribed text is sent to OpenAI's API for grammar analysis and AI conversation features.</p>
+        
+        <p><strong>Subscription Information:</strong> If you subscribe to TenseUp Premium or Premium+, payment is processed entirely by Apple through the App Store. We do not collect or store your payment details. We receive only a confirmation of your subscription status through RevenueCat, our subscription management service.</p>
+        
+        <p><strong>Usage Data:</strong> We track basic usage counts (e.g., daily practice sessions, streak tracking) locally on your device using UserDefaults and SwiftData. This data is not transmitted to any external server.</p>
+        
+        <p><strong>Vocabulary Data:</strong> Words you save to your vocabulary list are stored locally on your device using SwiftData.</p>
 
-            <div class="pricing-tier">
-                <div class="tier-name">TenseUp Premium</div>
-                <p><strong>Monthly:</strong> $4.99/month<br>
-                <strong>Annual:</strong> $49.99/year (save 17%)</p>
-                <p>Unlocks:</p>
-                <ul>
-                    <li>Unlimited AI conversations</li>
-                    <li>All grammar lessons</li>
-                    <li>All role-play scenarios</li>
-                    <li>Unlimited vocabulary words</li>
-                    <li>Full conversation history</li>
-                    <li>Ad-free experience</li>
-                </ul>
-            </div>
-
-            <div class="pricing-tier">
-                <div class="tier-name">TenseUp Premium+</div>
-                <p><strong>Monthly:</strong> $12.99/month<br>
-                <strong>Annual:</strong> $129.99/year (save 17%)</p>
-                <p>Everything in Premium, plus:</p>
-                <ul>
-                    <li>Whisper AI speech recognition (accent-friendly)</li>
-                    <li>Advanced pronunciation feedback</li>
-                    <li>Priority support</li>
-                </ul>
-            </div>
+        <div class="highlight">
+            <h2 style="margin-top: 0;">Third-Party AI Service - OpenAI</h2>
+            
+            <p><strong>What data is sent to OpenAI:</strong></p>
+            <ul>
+                <li>Your spoken or typed messages during AI conversations</li>
+                <li>Your grammar practice exercises and answers</li>
+                <li>Role-play scenario conversations</li>
+                <li>Text you request to be analyzed or corrected</li>
+                <li>Conversation context to provide personalized responses</li>
+            </ul>
+            
+            <p><strong>What data is NOT sent to OpenAI:</strong></p>
+            <ul>
+                <li>Your email address or Apple ID</li>
+                <li>Your payment information</li>
+                <li>Your device identifiers</li>
+                <li>Your saved vocabulary list</li>
+                <li>Your streak or usage statistics</li>
+                <li>Any personal profile information</li>
+            </ul>
+            
+            <p><strong>Why we send data to OpenAI:</strong><br>
+            We use OpenAI's GPT models to provide AI-powered features including:</p>
+            <ul>
+                <li>Natural conversation practice with AI</li>
+                <li>Real-time grammar corrections and explanations</li>
+                <li>Role-play scenario interactions</li>
+                <li>Personalized learning feedback</li>
+            </ul>
+            
+            <p><strong>How OpenAI handles your data:</strong><br>
+            OpenAI processes your conversation data to generate AI responses. According to OpenAI's API Data Usage Policy, data submitted through their API:</p>
+            <ul>
+                <li>Is not used to train OpenAI's models</li>
+                <li>May be retained for up to 30 days for abuse monitoring</li>
+                <li>Is then deleted from OpenAI's systems</li>
+            </ul>
+            
+            <p><strong>Your consent:</strong><br>
+            By using TenseUp's AI features (conversations, grammar check, role-play, lessons), you explicitly consent to your conversation data being sent to OpenAI for processing. You can stop using AI features at any time by closing the app or deleting your account.</p>
+            
+            <p><strong>Learn more about OpenAI's practices:</strong></p>
+            <ul>
+                <li><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI Privacy Policy</a></li>
+                <li><a href="https://openai.com/policies/api-data-usage-policies" target="_blank">OpenAI API Data Usage Policy</a></li>
+            </ul>
         </div>
 
-        <h2>4. Subscription Terms</h2>
-        <p><strong>Auto-Renewal:</strong></p>
+        <h2>2. Other Third-Party Services</h2>
+        
+        <p><strong>RevenueCat:</strong> Used to manage subscriptions. RevenueCat receives an anonymous app user ID to verify subscription status. RevenueCat does not receive your conversation data. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's Privacy Policy</a>.</p>
+        
+        <p><strong>Apple Speech Framework:</strong> Speech recognition (Standard mode) is processed on-device or through Apple's servers, subject to <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+        
+        <p><strong>Whisper AI (Premium+ only):</strong> Advanced speech recognition is processed through OpenAI's Whisper API. Audio recordings are sent to OpenAI, transcribed, and then deleted. Transcriptions are handled as described in the OpenAI section above.</p>
+
+        <h2>3. Data Storage & Security</h2>
+        <p>Your practice history, vocabulary list, and usage statistics are stored locally on your device using SwiftData and UserDefaults. We do not operate external servers that store your personal data. All communication with third-party APIs (OpenAI, RevenueCat) uses encrypted HTTPS connections.</p>
+
+        <h2>4. How to Control Your Data</h2>
+        <p><strong>Stop sharing data with OpenAI:</strong> Stop using the AI features (conversations, grammar check, role-play, lessons). The app will continue to work for vocabulary review and streak tracking.</p>
+        
+        <p><strong>Delete your local data:</strong> Delete the TenseUp app from your device. This will remove all locally stored practice history, vocabulary, and statistics.</p>
+        
+        <p><strong>Cancel subscription:</strong> Go to Settings → Apple ID → Subscriptions on your device.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>TenseUp is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used our app, please contact us.</p>
+
+        <h2>6. Your Rights (GDPR/CCPA)</h2>
+        <p>If you are located in the European Union or California, you have certain rights regarding your data:</p>
         <ul>
-            <li>Payment is charged to your Apple ID account at confirmation of purchase</li>
-            <li>Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period</li>
-            <li>Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price</li>
-            <li>You can manage and cancel your subscriptions by going to your device Settings → Apple ID → Subscriptions</li>
-            <li>No cancellation of the current subscription is allowed during the active subscription period</li>
-            <li>No refunds will be provided for unused portions of a subscription period</li>
+            <li><strong>Access:</strong> Request a copy of your data (stored locally on your device)</li>
+            <li><strong>Deletion:</strong> Delete the app to remove all local data</li>
+            <li><strong>Opt-out:</strong> Stop using AI features to stop sharing with OpenAI</li>
         </ul>
 
-        <h2>5. Free Trial</h2>
-        <p>If a free trial is offered, you will be charged the subscription price at the end of the trial period unless you cancel at least 24 hours before the trial ends. The free trial is only available once per Apple ID.</p>
-
-        <h2>6. Acceptable Use</h2>
-        <p>You agree not to misuse the App, including but not limited to:</p>
+        <h2>7. Data Retention</h2>
         <ul>
-            <li>Attempting to reverse-engineer, decompile, or disassemble the App</li>
-            <li>Using the App for any unlawful purpose</li>
-            <li>Interfering with the App's functionality or servers</li>
-            <li>Using the App to generate or share harmful, offensive, or illegal content</li>
-            <li>Sharing your account with others</li>
-            <li>Creating multiple accounts to bypass usage limits</li>
+            <li><strong>Local data:</strong> Stored on your device until you delete the app</li>
+            <li><strong>OpenAI data:</strong> Retained for up to 30 days, then deleted</li>
+            <li><strong>RevenueCat data:</strong> Subscription status retained as long as you're subscribed</li>
         </ul>
 
-        <h2>7. AI-Generated Content</h2>
-        <p>Grammar corrections, explanations, and AI conversation responses are generated by artificial intelligence and may not always be accurate. The App is a practice tool and should not be relied upon as a sole source of grammar instruction or language learning. Always verify important information with a qualified language instructor.</p>
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-        <h2>8. User Conduct</h2>
-        <p>You are responsible for your use of the App and any content you input. You agree not to use the App to:</p>
-        <ul>
-            <li>Generate spam, harassment, or abusive content</li>
-            <li>Impersonate others or misrepresent your identity</li>
-            <li>Violate any applicable laws or regulations</li>
-            <li>Infringe on intellectual property rights</li>
-        </ul>
-
-        <h2>9. Intellectual Property</h2>
-        <p>All content, design, code, and trademarks in the App are the property of TenseUp and are protected by intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of the App or its content.</p>
-
-        <h2>10. Termination</h2>
-        <p>We reserve the right to suspend or terminate your access to the App at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties, or for any other reason.</p>
-
-        <h2>11. Disclaimer of Warranties</h2>
-        <p>The App is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee that:</p>
-        <ul>
-            <li>The App will be error-free or uninterrupted</li>
-            <li>Defects will be corrected</li>
-            <li>The App is free of viruses or harmful components</li>
-            <li>Grammar corrections will be 100% accurate</li>
-            <li>AI-generated content will meet your expectations</li>
-        </ul>
-
-        <h2>12. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, TenseUp shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
-        <ul>
-            <li>Your use or inability to use the App</li>
-            <li>Any unauthorized access to or use of our servers</li>
-            <li>Any bugs, viruses, or harmful code transmitted through the App</li>
-            <li>Any errors or omissions in AI-generated content</li>
-            <li>Any third-party content or conduct</li>
-        </ul>
-
-        <h2>13. Indemnification</h2>
-        <p>You agree to indemnify and hold harmless TenseUp and its affiliates from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of the App or violation of these Terms.</p>
-
-        <h2>14. Changes to These Terms</h2>
-        <p>We reserve the right to update these Terms of Use at any time. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of the App after changes constitutes acceptance of updated terms.</p>
-
-        <h2>15. Governing Law</h2>
-        <p>These terms are governed by the laws of the State of Israel, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the App shall be resolved in the courts of Israel.</p>
-
-        <h2>16. Contact Us</h2>
-        <p>If you have questions about these Terms, contact us at:<br>
-        <strong>Email:</strong> <a href="mailto:jaccoperetz@gmail.com">jaccoperetz@gmail.com</a><br>
+        <h2>9. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or how your data is handled, contact us at:<br>
+        <a href="mailto:jaccoperetz@gmail.com">jaccoperetz@gmail.com</a></p>
 
         <div class="footer">© 2026 TenseUp. All Rights Reserved.</div>
     </div>

@@ -43,6 +43,37 @@
             color: #424245;
             margin-bottom: 14px;
         }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 14px;
+        }
+        li {
+            font-size: 15px;
+            color: #424245;
+            margin-bottom: 8px;
+        }
+        .pricing-table {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .pricing-tier {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+        .pricing-tier:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tier-name {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
         a { color: #007aff; text-decoration: none; }
         a:hover { text-decoration: underline; }
         .footer {
@@ -58,47 +89,149 @@
 <body>
     <div class="container">
         <h1>Terms of Use</h1>
-        <p class="updated">Last updated: February 5, 2026</p>
+        <p class="updated">Last updated: February 19, 2026</p>
 
         <p>Welcome to TenseUp. By downloading, accessing, or using the TenseUp application ("the App"), you agree to be bound by these Terms of Use. If you do not agree, please do not use the App.</p>
 
         <h2>1. Description of Service</h2>
-        <p>TenseUp is an AI-powered English grammar practice tool. The App allows users to practice spoken English and receive grammar corrections and explanations using artificial intelligence. The App is intended for educational purposes only.</p>
+        <p>TenseUp is an AI-powered English grammar practice and conversation application. The App allows users to:</p>
+        <ul>
+            <li>Practice spoken English with AI conversation partners</li>
+            <li>Receive real-time grammar corrections and explanations</li>
+            <li>Participate in role-play scenarios for real-life situations</li>
+            <li>Complete structured grammar lessons</li>
+            <li>Build and review vocabulary with spaced repetition</li>
+            <li>Track learning progress and maintain daily streaks</li>
+        </ul>
+        <p>The App is intended for educational purposes only and is not a substitute for professional language instruction.</p>
 
-        <h2>2. Subscriptions & Payments</h2>
-        <p><strong>Free Tier:</strong> The App provides limited daily practice sessions at no cost.</p>
-        <p><strong>TenseUp Pro (Auto-Renewable Subscription):</strong> Unlocks unlimited practice sessions, full history, topic generator, and advanced AI analysis.</p>
-        <p><strong>Subscription Terms:</strong></p>
-        <p>• Payment is charged to your Apple ID account at confirmation of purchase.<br>
-        • Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period.<br>
-        • Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price.<br>
-        • You can manage and cancel your subscriptions by going to your device Settings → Apple ID → Subscriptions.<br>
-        • No cancellation of the current subscription is allowed during the active subscription period.</p>
+        <h2>2. Third-Party AI Services</h2>
+        <p>TenseUp uses OpenAI's API to provide AI-powered features. By using the App's AI features (conversations, grammar check, role-play, lessons), you acknowledge and agree that:</p>
+        <ul>
+            <li>Your conversation text will be sent to OpenAI for processing</li>
+            <li>OpenAI's Privacy Policy and Terms of Service apply to this data</li>
+            <li>You have reviewed our Privacy Policy explaining this data sharing</li>
+            <li>You consent to this data being processed by OpenAI</li>
+        </ul>
+        <p>For more details, see our <a href="privacy.html">Privacy Policy</a> and <a href="https://openai.com/policies/terms-of-use" target="_blank">OpenAI's Terms of Service</a>.</p>
 
-        <h2>3. Acceptable Use</h2>
-        <p>You agree not to misuse the App, including but not limited to: attempting to reverse-engineer the App, using the App for any unlawful purpose, or interfering with the App's functionality.</p>
+        <h2>3. Subscriptions & Payments</h2>
+        
+        <div class="pricing-table">
+            <div class="pricing-tier">
+                <div class="tier-name">Free Tier</div>
+                <p>The App provides limited features at no cost:</p>
+                <ul>
+                    <li>5 AI conversations per day</li>
+                    <li>Basic grammar lessons</li>
+                    <li>50-word vocabulary limit</li>
+                    <li>Standard speech recognition</li>
+                </ul>
+            </div>
 
-        <h2>4. AI-Generated Content</h2>
-        <p>Grammar corrections and explanations are generated by artificial intelligence and may not always be accurate. The App is a practice tool and should not be relied upon as a sole source of grammar instruction.</p>
+            <div class="pricing-tier">
+                <div class="tier-name">TenseUp Premium</div>
+                <p><strong>Monthly:</strong> $4.99/month<br>
+                <strong>Annual:</strong> $49.99/year (save 17%)</p>
+                <p>Unlocks:</p>
+                <ul>
+                    <li>Unlimited AI conversations</li>
+                    <li>All grammar lessons</li>
+                    <li>All role-play scenarios</li>
+                    <li>Unlimited vocabulary words</li>
+                    <li>Full conversation history</li>
+                    <li>Ad-free experience</li>
+                </ul>
+            </div>
 
-        <h2>5. Intellectual Property</h2>
-        <p>All content, design, and code in the App are the property of TenseUp and are protected by intellectual property laws. You may not copy, modify, or distribute any part of the App.</p>
+            <div class="pricing-tier">
+                <div class="tier-name">TenseUp Premium+</div>
+                <p><strong>Monthly:</strong> $12.99/month<br>
+                <strong>Annual:</strong> $129.99/year (save 17%)</p>
+                <p>Everything in Premium, plus:</p>
+                <ul>
+                    <li>Whisper AI speech recognition (accent-friendly)</li>
+                    <li>Advanced pronunciation feedback</li>
+                    <li>Priority support</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2>6. Disclaimer of Warranties</h2>
-        <p>The App is provided "as is" without warranties of any kind. We do not guarantee that the App will be error-free, uninterrupted, or that grammar corrections will be 100% accurate.</p>
+        <h2>4. Subscription Terms</h2>
+        <p><strong>Auto-Renewal:</strong></p>
+        <ul>
+            <li>Payment is charged to your Apple ID account at confirmation of purchase</li>
+            <li>Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period</li>
+            <li>Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price</li>
+            <li>You can manage and cancel your subscriptions by going to your device Settings → Apple ID → Subscriptions</li>
+            <li>No cancellation of the current subscription is allowed during the active subscription period</li>
+            <li>No refunds will be provided for unused portions of a subscription period</li>
+        </ul>
 
-        <h2>7. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, TenseUp shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
+        <h2>5. Free Trial</h2>
+        <p>If a free trial is offered, you will be charged the subscription price at the end of the trial period unless you cancel at least 24 hours before the trial ends. The free trial is only available once per Apple ID.</p>
 
-        <h2>8. Changes to These Terms</h2>
-        <p>We reserve the right to update these Terms of Use at any time. Continued use of the App constitutes acceptance of updated terms.</p>
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to misuse the App, including but not limited to:</p>
+        <ul>
+            <li>Attempting to reverse-engineer, decompile, or disassemble the App</li>
+            <li>Using the App for any unlawful purpose</li>
+            <li>Interfering with the App's functionality or servers</li>
+            <li>Using the App to generate or share harmful, offensive, or illegal content</li>
+            <li>Sharing your account with others</li>
+            <li>Creating multiple accounts to bypass usage limits</li>
+        </ul>
 
-        <h2>9. Governing Law</h2>
-        <p>These terms are governed by the laws of the State of Israel, without regard to conflict of law principles.</p>
+        <h2>7. AI-Generated Content</h2>
+        <p>Grammar corrections, explanations, and AI conversation responses are generated by artificial intelligence and may not always be accurate. The App is a practice tool and should not be relied upon as a sole source of grammar instruction or language learning. Always verify important information with a qualified language instructor.</p>
 
-        <h2>10. Contact Us</h2>
+        <h2>8. User Conduct</h2>
+        <p>You are responsible for your use of the App and any content you input. You agree not to use the App to:</p>
+        <ul>
+            <li>Generate spam, harassment, or abusive content</li>
+            <li>Impersonate others or misrepresent your identity</li>
+            <li>Violate any applicable laws or regulations</li>
+            <li>Infringe on intellectual property rights</li>
+        </ul>
+
+        <h2>9. Intellectual Property</h2>
+        <p>All content, design, code, and trademarks in the App are the property of TenseUp and are protected by intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of the App or its content.</p>
+
+        <h2>10. Termination</h2>
+        <p>We reserve the right to suspend or terminate your access to the App at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties, or for any other reason.</p>
+
+        <h2>11. Disclaimer of Warranties</h2>
+        <p>The App is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee that:</p>
+        <ul>
+            <li>The App will be error-free or uninterrupted</li>
+            <li>Defects will be corrected</li>
+            <li>The App is free of viruses or harmful components</li>
+            <li>Grammar corrections will be 100% accurate</li>
+            <li>AI-generated content will meet your expectations</li>
+        </ul>
+
+        <h2>12. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, TenseUp shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
+        <ul>
+            <li>Your use or inability to use the App</li>
+            <li>Any unauthorized access to or use of our servers</li>
+            <li>Any bugs, viruses, or harmful code transmitted through the App</li>
+            <li>Any errors or omissions in AI-generated content</li>
+            <li>Any third-party content or conduct</li>
+        </ul>
+
+        <h2>13. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless TenseUp and its affiliates from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of the App or violation of these Terms.</p>
+
+        <h2>14. Changes to These Terms</h2>
+        <p>We reserve the right to update these Terms of Use at any time. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of the App after changes constitutes acceptance of updated terms.</p>
+
+        <h2>15. Governing Law</h2>
+        <p>These terms are governed by the laws of the State of Israel, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the App shall be resolved in the courts of Israel.</p>
+
+        <h2>16. Contact Us</h2>
         <p>If you have questions about these Terms, contact us at:<br>
-        <a href="mailto:jaccoperetz@gmail.com">jaccoperetz@gmail.com</a></p>
+        <strong>Email:</strong> <a href="mailto:jaccoperetz@gmail.com">jaccoperetz@gmail.com</a><br>
 
         <div class="footer">© 2026 TenseUp. All Rights Reserved.</div>
     </div>
